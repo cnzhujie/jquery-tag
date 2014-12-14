@@ -1,5 +1,6 @@
 #jquery.tag
-## Author:http://www.cnzhujie.cn/
+演示地址：http://jquery-tag.coding.io/
+
 ## jquery.tag使用文档
 在页面中引入相关js、css
 ```html

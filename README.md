@@ -1,26 +1,34 @@
 #jquery.tag
-演示地址：http://jquery-tag.coding.io/
+演示地址：http://cnzhujie.cn/post.page?id=111
 
 ## jquery.tag使用文档
 在页面中引入相关js、css
+
 ```html
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery.tag.js"></script>
 <link rel="stylesheet" href="jquery.tag.css" type="text/css">
 ```
+
 ### 1、简单用法
+
 **html:**
+
 ```html
 <div id="testtag1" tagname="test1"></div>
 ```
+
 注意当页面中有多个tag container时，可以指定tagname进行区分。若页面中只有一个，则tagname可以省略
+
 **js:**
 ```javascript
 $(document).ready(function(){
 	$("#testtag1").tagsInit();
 });
 ```
+
 ### 2、配置参数
+
 <table cellspacing="0" cellpadding="5">
 	<thead><tr>
 		<th class="parameter">名称</th>
@@ -105,13 +113,19 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
+
 ### 3、高级用法
+
 #### 3.1、添加之前进行判断，符合条件再添加
+
 **html:**
+
 ```html
 <div id="testtag2" tagname="test2"></div>
 ```
+
 **js:**
+
 ```javascript
 $("#testtag2").tagsInit({
 	inputNote:"输入后回车",
@@ -124,11 +138,14 @@ $("#testtag2").tagsInit({
 	}
 });
 ```
+
 #### 3.2、给每个标签上加链接或者js函数
+
 **html:**
 ```html
 <div id="testtag3" tagname="test3"></div> <div id="testtag4" tagname="test4"></div>
 ```
+
 **js:**
 ```javascript
 $("#testtag3").tagsInit({
@@ -141,11 +158,14 @@ $("#testtag4").tagsInit({
 	theme:'black'
 });
 ```
+
 #### 3.3、添加标签的时候与后台交互
+
 **html:**
 ```html
 <div id="testtag5" tagname="test5"></div>
 ```
+
 **js:**
 ```javascript
 var tag=$("#testtag5").tagsInit({
@@ -158,29 +178,42 @@ var tag=$("#testtag5").tagsInit({
 	}
 });
 ```
+
 ### 4、其他函数
+
 #### 4.1、tagsAdd
+
 通过此函数可以手动向标签容器添加标签
 函数形式:tagsAdd=function(tagValue,tagId){...}
+
 #### 4.2、tagsDel
+
 通过此函数可以手动在标签容器中删除标签
 函数形式:tagsDel=function(tagValue,tagId){...}
+
 #### 4.3、tagsClear
+
 通过此函数可以清空标签容器中的标签
 函数形式:tagsClear=function(){...}
+
 #### 4.4、tagsCount
 通过此函数可以获取标签容器中标签的个数
 函数形式:tagsCount=function(){...}
+
 #### 4.5、tagsIndexof
 通过此函数可以获取某标签在标签容器中的位置
 函数形式:tagsIndexof=function(tagValue,tagId){...}。如果tagValue不为空，按照tagValue查找，否则按照tagId进行查找
+
 #### 4.6、tagsStr
 通过此函数可以将所有标签转换为字符串(通过split相隔)
 函数形式:tagsStr=function(split){...}
+
 #### 4.7、tagsJson
 通过此函数可以将所有标签转换为json字符串
 函数形式:tagsJson=function(){...}
+
 #### 4.8示例
+
 **html:**
 ```html
 <div>
@@ -194,6 +227,7 @@ var tag=$("#testtag5").tagsInit({
 </div>
 <div id="testtag6" tagname="test6"></div>
 ```
+
 **js:**
 ```javascript
 var tag6=$("#testtag6").tagsInit();

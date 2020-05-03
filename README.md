@@ -1,5 +1,6 @@
-#jquery.tag
-演示地址：http://cnzhujie.cn/post.page?id=111
+# jquery.tag
+
+演示地址：https://cnzhujie.github.io/jquery-tag/
 
 ## jquery.tag使用文档
 在页面中引入相关js、css
